@@ -18,10 +18,10 @@ source $compile_buildpack_dir/bin/common.sh
 
 BUILDPACK_PATH=$compile_buildpack_dir source $compile_buildpack_dir/compile-extensions/lib/common
 
-#translated_url=$($compile_buildpack_dir/compile-extensions/bin/download_dependency nginx.tgz /tmp)
-# echo "Downloaded [$translated_url]"
+translated_url=$($compile_buildpack_dir/compile-extensions/bin/download_dependency nginx.tgz /tmp)
+echo "Downloaded [$translated_url]"
 compile_nginx_tgz="$compile_buildpack_dir/nginx.tgz"
-echo $compile_nginx_tgz
+echo "$compile_nginx_tgz"
 cd $build_dir
 
 # Alternate root location (default is root of project) for html/js/css
