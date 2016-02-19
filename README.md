@@ -3,6 +3,7 @@
 This is a fork of the staticfile-buildpack that provides additional nginx functionality. The objective is to allow open graph metatags to be responsive to query parameters for enhanced social sharing capability.
 
 Modules added:
+- ngx_devel_kit (3rd party)
 - ngx_set_misc (3rd party)
 - ngx_http_sub_module
 
